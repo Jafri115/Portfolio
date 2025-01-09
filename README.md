@@ -1,4 +1,4 @@
-# Syed Wasif Murtaza Jafri - Data Scientist
+# Data Scientist
 
 #### Technical Skills: Python, SQL, Snowflake, TensorFlow, AWS, Docker, Kubernetes, R
 
@@ -15,13 +15,13 @@
 
 ## Work Experience
 
-**Data Scientist @ IONOS SE (_Sep 2022 - Present_)**  
+**Data Scientist - WorkStudent @ IONOS SE (_Sep 2022 -_Sep_2023)**  
 - Optimized data pipelines with Snowpark, reducing runtime by 85%.  
 - Developed Looker dashboards for fraud KPI monitoring, improving decision-making processes.  
 - Automated data preprocessing and transformation using CI/CD pipelines.  
 - Collaborated in Agile Scrum teams for efficient delivery.  
 
-**Software Developer @ Everest Systems GmbH (_Aug 2021 - Dec 2021_)**  
+**Software Developer - WorkStudent  @ Everest Systems GmbH (_Aug 2021 - Dec 2021_)**  
 - Developed a React-based Expense Management System.  
 - Integrated AWS S3 for secure file storage.  
 - Deployed containerized applications using Docker and Kubernetes.  
