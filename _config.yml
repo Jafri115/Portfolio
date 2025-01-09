@@ -1,5 +1,10 @@
-title :  Wasif Jafri
+title: Wasif Jafri
 logo: /assets/img/Wasif_headshot.png
-#description: text below image
-#show_downloads: true
 theme: jekyll-theme-minimal
+description: Portfolio of Wasif Jafri
+show_downloads: true
+markdown: kramdown
+
+# Add custom CSS
+include:
+  - style.css
