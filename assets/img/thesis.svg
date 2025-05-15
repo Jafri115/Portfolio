@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2c42" />
+      <stop offset="100%" stop-color="#121c2e" />
+    </linearGradient>
+    <linearGradient id="highlight-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a88e5" />
+      <stop offset="100%" stop-color="#6b5ed6" />
+    </linearGradient>
+    <linearGradient id="normal-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b5998" />
+      <stop offset="100%" stop-color="#2c4370" />
+    </linearGradient>
+    <linearGradient id="fraud-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e84c3d" />
+      <stop offset="100%" stop-color="#c0392b" />
+    </linearGradient>
+    <!-- Arrowhead marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7c93" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-gradient)" rx="10" ry="10" />
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">
+    Fraud Detection with Transformers and GANs
+  </text>
+
+  <!-- Left Section: Neural Network Architecture -->
+  <g transform="translate(100, 120)">
+    <!-- Input Layer -->
+    <circle cx="50" cy="50" r="15" fill="#4a88e5" />
+    <circle cx="50" cy="100" r="15" fill="#4a88e5" />
+    <circle cx="50" cy="150" r="15" fill="#4a88e5" />
+    <circle cx="50" cy="200" r="15" fill="#4a88e5" />
+    <circle cx="50" cy="250" r="15" fill="#4a88e5" />
+
+    <!-- Connections from inputs to Hitanet blocks -->
+    <line x1="65" y1="50" x2="120" y2="50" stroke="#6b7c93" stroke-width="2" />
+    <line x1="65" y1="100" x2="120" y2="100" stroke="#6b7c93" stroke-width="2" />
+    <line x1="65" y1="150" x2="120" y2="150" stroke="#6b7c93" stroke-width="2" />
+    <line x1="65" y1="200" x2="120" y2="200" stroke="#6b7c93" stroke-width="2" />
+    <line x1="65" y1="250" x2="120" y2="250" stroke="#6b7c93" stroke-width="2" />
+
+    <!-- Hitanet Transformer Block -->
+    <rect x="120" y="30" width="100" height="100" rx="5" ry="5" fill="url(#highlight-gradient)" stroke="white" stroke-width="2" />
+    <text x="170" y="85" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Sequential</text>
+
+    <!-- Hitanet Tabular Block -->
+    <rect x="120" y="150" width="100" height="100" rx="5" ry="5" fill="url(#highlight-gradient)" stroke="white" stroke-width="2" />
+    <text x="170" y="205" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Tabular</text>
+
+    <!-- GAN Block -->
+    <rect x="280" y="30" width="100" height="220" rx="5" ry="5" fill="url(#normal-gradient)" stroke="white" stroke-width="2" />
+    <text x="330" y="150" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">GAN</text>
+
+    <!-- Arrows from Hitanet blocks to GAN -->
+    <line x1="220" y1="80" x2="280" y2="80" stroke="#6b7c93" stroke-width="2" marker-end="url(#arrowhead)" />
+    <line x1="220" y1="200" x2="280" y2="200" stroke="#6b7c93" stroke-width="2" marker-end="url(#arrowhead)" />
+
+    <!-- Output Layer -->
+    <circle cx="450" cy="95" r="25" fill="#27ae60" />
+    <text x="450" y="100" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Valid</text>
+
+    <circle cx="450" cy="195" r="25" fill="#e74c3c" />
+    <text x="450" y="200" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Fraud</text>
+
+    <!-- Connections from GAN to outputs -->
+    <line x1="380" y1="95" x2="425" y2="95" stroke="#6b7c93" stroke-width="2" />
+    <line x1="380" y1="200" x2="425" y2="200" stroke="#6b7c93" stroke-width="2" />
+  </g>
+
+  <!-- Visualization of time series data with anomalies -->
+  <g transform="translate(100, 400)">
+    <text x="300" y="40" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">
+      Time-Aware Anomaly Detection in Sequential Transaction Data
+    </text>
+
+    <!-- X and Y axes -->
+    <!-- <line x1="0" y1="0" x2="600" y2="0" stroke="white" stroke-width="2" />
+    <line x1="0" y1="0" x2="0" y2="-100" stroke="white" stroke-width="2" /> -->
+
+    <!-- Normal transaction pattern -->
+    <!-- <path d="M0,0 Q50,-20 100,-25 T200,-30 T300,-35 T400,-30 T500,-40" stroke="#3498db" stroke-width="3" fill="none" /> -->
+
+    </g>
+   
+</svg>
